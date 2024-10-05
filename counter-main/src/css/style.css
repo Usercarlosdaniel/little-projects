@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  appearance: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  line-height: 1.5;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  background: rgb(242, 242, 242);
+}
+
+main > .container {
+  height: 80%;
+  max-width: 80em;
+  margin: 0 auto;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+main > .container > h1 {
+  color: darkslategrey;
+  font-size: 7rem;
+}
+main > .container > span {
+  font-size: 6rem;
+  color: green;
+  font-weight: 700;
+}
+
+main > .container > .button__container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+main > .container > .button__container button {
+    background: transparent;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    border: 2px solid black;
+    text-transform: uppercase;
+    padding: .2rem .5rem;
+    cursor: pointer;
+}
