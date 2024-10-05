@@ -4,24 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reviews</title>
+    <link rel="stylesheet" href="src/css/style.css" />
   </head>
   <body>
     <main>
-      <h1>Our Reviews</h1>
+      <div class="text__container">
+        <h1>Our Reviews</h1>
+        <div class="underline"></div>
+      </div>
       <div class="container">
         <div>
-          <img src="" alt="picture" />
-          <p>Susan Smith</p>
-          <span>web developer</span>
+          <img
+            src=""
+            alt="picture"
+            id="author-picture"
+          />
+          <p id="author"></p>
+          <span id="job"></span>
         </div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo
-          excepturi vero ad? Doloremque adipisci assumenda vel nam pariatur at
-          quis temporibus rerum suscipit! Animi sint nobis maxime cum at
-          inventore!
+        <p id="review">
         </p>
-        <button>Suprise Me</button>
+        <div class="slide-buttons">
+          <button class="btn prev">
+            <i class="fa-solid fa-angle-left"></i>
+          </button>
+          <button class="btn next">
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </div>
+        <button id="random-btn">Suprise Me</button>
       </div>
     </main>
+    <script
+      src="https://kit.fontawesome.com/ef6d0e7fee.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="src/js/index.js"></script>
   </body>
 </html>

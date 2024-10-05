@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  outline: none;
+  appearance: none;
+  box-sizing: border-box;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  background: rgb(240, 240, 240);
+  font-size: 1rem;
+  font-family: sans-serif;
+}
+
+main .text__container {
+  text-align: center;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.text__container h1 {
+  font-size: 4rem;
+}
+.text__container .underline {
+  margin: 0.5rem auto 0 auto;
+  width: 5rem;
+  height: 0.5rem;
+  background-color: darkcyan;
+}
+
+main .container {
+  width: 40rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px 20px #00000022;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem 2rem;
+}
+
+main .container img {
+  border-radius: 9999px;
+  width: 9em;
+  height: 9em;
+  margin-bottom: 1rem;
+}
+main .container > div > p {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+main .container > div > span {
+  font-size: 1.2rem;
+  color: darkcyan;
+}
+
+main .container > p {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+  color: rgb(201, 201, 201);
+}
+
+#random-btn {
+  border-radius: 0.5rem;
+  background-color: transparent;
+  padding: 0.2rem 0.5rem;
+  border: 2px solid darkcyan;
+  color: darkcyan;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.1s ease-in all;
+  margin-top: 1rem;
+}
+
+#random-btn:hover {
+  scale: 1.2;
+}
+
+#random-btn:active {
+  border: 2px solid aqua;
+  color: aqua;
+}
+
+.slide-buttons > button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.fa-solid {
+  font-size: 1.5rem;
+  color: darkcyan;
+}
+
+.fa-solid:active {
+    color: aqua;
+  }

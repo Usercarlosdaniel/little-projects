@@ -9,12 +9,12 @@ function browserSyncServe(cb) {
 }
 
 function browserSyncReload(cb) {
-  browserSync.reload;
+  browserSync.reload();
   cb();
 }
 
 function watchTask() {
-  watch(".*html", browserSyncReload);
+  watch("*.html", browserSyncReload);
   watch("./src/css/*.css", browserSyncReload);
   watch("./src/js/*.js", browserSyncReload);
 }
