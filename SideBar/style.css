@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  text-decoration: none;
+  appearance: none;
+  outline: none;
+  border: none;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+  font-size: 0.875rem;
+  background-color: bisque;
+  display: flex;
+}
+
+#display-sidebar {
+  position: absolute;
+  top: 2rem;
+  right: 5rem;
+  background-color: transparent;
+  cursor: pointer;
+  color: darkturquoise;
+}
+
+#display-sidebar i {
+  font-size: 2rem;
+  transition: all 0.2s ease;
+}
+
+#display-sidebar i:hover {
+  transform: rotate(90deg);
+}
+
+#display-sidebar i:active {
+  transform: rotate(180deg);
+}
+
+aside {
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  padding: 1rem 1.5rem;
+  height: 100%;
+  background-color: white;
+  transform: translateX(-1000px);
+  transition: all 0.3s ease;
+}
+
+.sidebar {
+  transform: translateX(0);
+}
+
+aside .header {
+  justify-content: center;
+  display: flex;
+  gap: 5rem;
+  margin-bottom: 5rem;
+}
+
+.header h1 {
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  text-shadow: 2px 4px 2px #00000022;
+}
+
+h1 > span {
+  color: darkturquoise;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.links {
+  font-size: 2rem;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.links a {
+  color: grey;
+}
+.links a:hover {
+  color: darkturquoise;
+}
+
+.icon-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.icon-links i {
+  color: darkturquoise;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.icon-links i:hover {
+  scale: 1.2;
+}
+
+.icon-links i:active {
+  color: aqua;
+}
+
+#close-btn {
+  background: transparent;
+  cursor: pointer;
+}
+
+.fa-times {
+  color: red;
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 48em) {
+  aside {
+    width: auto;
+    text-align: start;
+  }
+  .header {
+    justify-content: start;
+  }
+}
