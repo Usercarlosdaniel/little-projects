@@ -1,0 +1,111 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  background: #dedede;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+.title h1 {
+  font-size: 3rem;
+}
+
+.title .underline {
+  width: 40%;
+  height: 4px;
+  margin: 0.75rem auto 1.5rem auto;
+  background-color: goldenrod;
+}
+
+.section-center {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.menu-item {
+  max-width: 30rem;
+}
+
+.menu-item .photo {
+  max-width: 30rem;
+  border: 4px solid goldenrod;
+  border-radius: 0.5rem;
+  display: block;
+}
+
+.menu-item .item-info header {
+  padding: 1rem 0 0.3rem 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px dotted grey;
+  font-size: 1.25rem;
+  letter-spacing: 0.2rem;
+}
+
+header > .price {
+  color: goldenrod;
+}
+
+.item-text {
+  color: rgb(81, 81, 100);
+  padding-top: 0.5rem;
+  word-break: break-all;
+}
+
+.btn-container {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.btn-container button {
+  background: transparent;
+  border: 2px solid goldenrod;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: goldenrod;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all .2s linear;
+}
+
+.btn-container button:hover {
+    background-color: goldenrod;
+    color: #dedede;
+}
+
+@media (min-width: 768px) {
+  .section-center {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+  .menu-item {
+    display: flex;
+    max-width: 40rem;
+  }
+  .menu-item .photo {
+    height: 10rem;
+    width: 14rem;
+  }
+  .menu-item .item-info header {
+    padding: 0;
+  }
+  .item-info {
+    padding-left: 1rem;
+  }
+}
