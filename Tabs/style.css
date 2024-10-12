@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+:root {
+  --clr-white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  line-height: 1.5;
+  background: #f4f4f4;
+  min-height: 100vh;
+  width: 100%;
+  padding: 4rem 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+section .title {
+  text-align: center;
+}
+
+section .title h2 {
+  font-size: 4rem;
+  letter-spacing: .3rem;
+}
+
+.content {
+  display: none;
+}
+
+.content.active {
+  display: block;
+  background: var(--clr-white);
+  border-radius: 0 0 0.5rem 0.5rem;
+  padding: 2rem;
+}
+
+.about-center {
+  display: grid;
+  padding: 0 4rem;
+  place-content: center;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 8rem;
+}
+
+.about-center img {
+  height: 24rem;
+  width: 40vw;
+  border-radius: 0.5rem;
+}
+
+.btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: #d9d9d9;
+  border-radius: 0.5rem 0.5rem 0 0;
+  overflow: hidden;
+}
+
+.btn-container .tab-btn {
+  border: none;
+  padding: 1rem;
+  width: 100%;
+  font-size: 1.3rem;
+  letter-spacing: .1rem;
+  cursor: pointer;
+}
+
+.tab-btn.active {
+  background-color: var(--clr-white);
+}
+
+.content h2 {
+    font-size: 1.15rem;
+    letter-spacing: .1rem;
+    margin-bottom: 1rem;
+}
