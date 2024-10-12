@@ -46,8 +46,10 @@ h1 {
 }
 
 .faq .answer {
-  padding: 1rem 0 1.5rem 0;
+  padding: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
+  height: 0;
+  visibility: hidden;
 }
 
 .answer p {
@@ -70,12 +72,10 @@ button:hover {
   color: goldenrod;
 }
 
-.answer {
-  display: none;
-}
-
 .faq.show .answer {
-  display: block;
+  padding: 1rem 0 1.5rem 0;
+  height: auto !important;
+  visibility: visible;
 }
 
 .fa-square-minus {
