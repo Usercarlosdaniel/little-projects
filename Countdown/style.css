@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  background: #ededed;
+  min-height: 100vh;
+  width: 100%;
+  display: grid;
+  place-content: center;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 2rem;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+}
+
+article img {
+  height: 30rem;
+  width: 50rem;
+}
+
+.gift-info {
+  padding: 2rem;
+}
+
+.gift-info h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  color: #0089d8;
+}
+
+.gift-info .giveaway {
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 2rem;
+}
+
+.gift-info p {
+  color: grey;
+  width: 80%;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.gift-info .deadline {
+  display: flex;
+  gap: 2rem;
+}
+
+.gift-info .deadline .deadline-format {
+  background-color: rgb(21, 35, 35);
+  color: white;
+  font-size: 1.3rem;
+  width: 6.5rem;
+  height: 6.5rem;
+  text-transform: uppercase;
+}
+
+.deadline-format h4 {
+    font-size: 2.5rem;
+}
+
+.deadline-format > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
