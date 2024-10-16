@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  text-align: center;
+  padding: 3rem 0;
+  line-height: 1.5;
+  min-height: 100vh;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  background: #f4f4f4;
+}
+
+main .title {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: rgb(0, 61, 73);
+  margin-bottom: 1rem;
+}
+
+main > div {
+  margin-bottom: 3rem;
+}
+
+main label {
+  font-size: 1.5rem;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+  color: rgb(0, 61, 73);
+}
+
+main label input {
+  width: 4rem;
+  height: 2rem;
+  border: none;
+  border-radius: 0.5em;
+}
+
+main .generate-btn {
+  text-transform: uppercase;
+  padding: 0.45rem;
+  border: none;
+  background: rgb(0, 111, 139);
+  color: #fff;
+  border-radius: 0.5em;
+  cursor: pointer;
+  margin-left: 1em;
+  transition: all 0.2s ease-in-out;
+}
+
+main .generate-btn:hover {
+  scale: 1.2;
+}
+
+main .text {
+  width: 45%;
+  margin: 0 auto;
+  color: grey;
+  font-size: 1.2rem;
+}
