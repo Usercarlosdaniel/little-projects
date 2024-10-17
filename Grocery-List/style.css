@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  width: 100%;
+  background: #f4f4f4;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+main {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 0.5em;
+  color: rgb(24, 40, 40);
+  box-shadow: 1px 1px 20px #00000050;
+}
+
+main h2 {
+  font-size: 2.5rem;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+main form {
+  width: 30em;
+  display: flex;
+  gap: 0.2rem;
+}
+
+form input {
+  width: 86%;
+  padding: 0.3rem;
+  border-radius: 0.5em;
+  border: 2px solid grey;
+}
+
+form input::placeholder {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: grey;
+}
+
+.submit-btn {
+  font-size: 0.9rem;
+  width: 14%;
+  background: rgb(149, 232, 232);
+  border: 2px solid rgb(149, 232, 232);
+  padding: 0.4rem;
+  border-radius: 0.5em;
+  color: rgb(58, 59, 59);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.grocery-list {
+  list-style-type: none;
+  padding-left: 0.7rem;
+}
+
+.grocery-list .item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.item > div {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.item > div button {
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.item > div > .edit-btn {
+  color: greenyellow;
+}
+
+.item > div > .delete-btn {
+  color: red;
+}
+
+.clear-all {
+  font-weight: 400;
+  color: red;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1.3rem;
+  letter-spacing: 0.2em;
+  display: block;
+  margin: 0 auto;
+}
+
+.alert {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.2rem;
+  width: 100;
+  border-radius: 0.5em;
+}
+
+.alert.success {
+  background: greenyellow;
+  color: green;
+}
+.alert.failure {
+  background: rgb(255, 116, 116);
+  color: red;
+}
